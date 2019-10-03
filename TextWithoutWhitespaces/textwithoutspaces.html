@@ -1,0 +1,20 @@
+<html>
+ <head>
+  <title>Text Without WhiteSpaces</title>
+  
+  <script>
+   function removeSpaces(){
+   var str = document.getElementById("textValue").innerHTML;
+   var output = str.replace(/ +/i,"");
+   document.getElementById("demo").innerHTML=output;
+   }
+  </script>
+ </head>
+ <body>
+  <h1>This page contains a text without spaces</h1>
+  <lable>Input your text :<lable>
+  <input type="text" id="textValue"/>
+  <button onclick="removeSpaces()">Remove</button>
+  <p id="demo"></p>
+ </body>
+</html>
